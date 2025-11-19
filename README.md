@@ -1,10 +1,10 @@
 # Connect Platform - Project 2
 ## Team Name/Number: [Metador4]
 ## Team Members
-- [Amina Gahramanova] - [agahram]
-- [Ismayil Ismayilzada] - [Ismail1809]
-- [William Nowell] - [borgerburger1]
-- [Frankie Wiczarski] - [GitHub Username]
+- Amina Gahramanova - [agahram](https://github.com/agahram)
+- Ismayil Ismayilzada - [Ismail1809](https://github.com/Ismail1809)
+- William Nowell - [borgerburger1](https://github.com/borgerburger1)
+- Frankie Wiczarski - [Frankie813](https://github.com/Frankie813)
 ## Project Description
 Brief description of the Connect platform and what this project
 implements. (Refer to BMC document)
