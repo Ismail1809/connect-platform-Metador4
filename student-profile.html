@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="user-profile-css/globals.css" />
+    <link rel="stylesheet" href="user-profile-css/styleguide.css" />
+    <link rel="stylesheet" href="user-profile-css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo-placeholder">TT</div>
+          <span class="brand-name">Profile</span>
+        </div>
+        <div class="header-actions">
+          <div class="search">
+            <input aria-label="Search" placeholder="Search..." />
+          </div>
+          <button id="themeToggle" class="btn ghost">Toggle Theme</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main-grid">
+      <aside class="profile-card">
+        <div class="photo-wrap">
+          <img
+            id="photoPreview"
+            alt="profile photo"
+            class="photo"
+            src="user-profile-assets/images/profile-placeholder.svg"
+          />
+          <label class="upload-btn">
+            <input id="photoInput" type="file" accept="image/*" />
+            Upload Photo
+          </label>
+        </div>
+        <h1 class="name">Ismayil Ismayilzada</h1>
+        <p class="meta">Major: CS • GPA: 3.9</p>
+        <div class="card-section">
+          <h3>Experience</h3>
+          <p class="small">
+            Backend Software Engineer Intern | Simbrella LLC — Baku,
+            Azerbaijan<br />06/2024 - 08/2024
+          </p>
+        </div>
+        <div class="card-section">
+          <h3>Skills</h3>
+          <ul>
+            <li>Python</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>SQL / PostgreSQL</li>
+          </ul>
+        </div>
+        <a class="btn primary" href="#">Upload CV</a>
+      </aside>
+
+      <section class="profile-main">
+        <div class="profile-top">
+          <div>
+            <h2 class="location">Lubbock, TX</h2>
+            <p class="muted">Student • Texas Tech University</p>
+          </div>
+          <div class="contact-inline">
+            <a href="tel:+18063096478">+1 806-309-6478</a>
+            <a href="mailto:iismayil@ttu.edu">iismayil@ttu.edu</a>
+          </div>
+        </div>
+
+        <nav class="tabs" role="tablist" aria-label="Profile Tabs">
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-about"
+            id="tab-about"
+            data-tab-btn="about"
+          >
+            About
+          </button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-apps"
+            id="tab-apps"
+            data-tab-btn="applications"
+          >
+            Applications
+          </button>
+        </nav>
+
+        <div class="tab-panels">
+          <section
+            class="tab"
+            data-tab="about"
+            id="panel-about"
+            role="tabpanel"
+            tabindex="0"
+            aria-labelledby="tab-about"
+          >
+            <p>
+              I am an ambitious learner passionate about expanding my knowledge
+              across different fields. I enjoy taking on new challenges,
+              developing practical skills, and working on projects that help me
+              grow both personally and professionally.
+            </p>
+            <br />
+
+            <div class="panel-subsection">
+              <h4>Contact Info:</h4>
+              <p>Address: 2508 Broadway St, Lubbock TX, 79406</p>
+              <p>Phone: +1 806-309-6478</p>
+              <p>Email: iismayil@ttu.edu</p>
+            </div>
+            <br />
+
+            <div class="panel-subsection">
+              <h4>Basic Info:</h4>
+              <ul class="info-list">
+                <li><strong>Birthday:</strong> 09/18/2006</li>
+                <li><strong>Gender:</strong> Male</li>
+              </ul>
+            </div>
+            <br />
+          </section>
+
+          <section
+            class="tab hidden"
+            data-tab="applications"
+            id="panel-apps"
+            role="tabpanel"
+            tabindex="0"
+            aria-labelledby="tab-apps"
+          >
+            <h3>Applications</h3>
+            <p class="muted">
+              All submitted applications and their current progress.
+            </p>
+
+            <div class="applications-list">
+              <article class="app-card" data-status="under-review">
+                <div class="app-card-header">
+                  <div>
+                    <h4 class="app-title">Backend Software Engineer Intern</h4>
+                    <div class="app-meta muted">
+                      Simbrella LLC • Baku, Azerbaijan — 06/2024
+                    </div>
+                  </div>
+                  <div class="app-status">Under Review</div>
+                </div>
+                <ol class="stepper" aria-hidden="false">
+                  <li class="step">Submitted</li>
+                  <li class="step">Under Review</li>
+                  <li class="step">Interview</li>
+                  <li class="step">Accepted</li>
+                </ol>
+              </article>
+
+              <article class="app-card" data-status="interview">
+                <div class="app-card-header">
+                  <div>
+                    <h4 class="app-title">Research Assistant</h4>
+                    <div class="app-meta muted">
+                      TTU CS Dept • Lubbock, TX — 09/2024
+                    </div>
+                  </div>
+                  <div class="app-status">Interview</div>
+                </div>
+                <ol class="stepper">
+                  <li class="step">Submitted</li>
+                  <li class="step">Under Review</li>
+                  <li class="step">Interview</li>
+                  <li class="step">Accepted</li>
+                </ol>
+              </article>
+
+              <article class="app-card" data-status="rejected">
+                <div class="app-card-header">
+                  <div>
+                    <h4 class="app-title">Frontend Developer</h4>
+                    <div class="app-meta muted">
+                      Acme Co. • Remote — 04/2024
+                    </div>
+                  </div>
+                  <div class="app-status">Rejected</div>
+                </div>
+                <ol class="stepper">
+                  <li class="step">Submitted</li>
+                  <li class="step">Under Review</li>
+                  <li class="step">Interview</li>
+                  <li class="step">Rejected</li>
+                </ol>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">©2025 Metador4. Built with passion.</div>
+    </footer>
+
+    <script src="user-profile-assets/js/script.js"></script>
+  </body>
+</html>
