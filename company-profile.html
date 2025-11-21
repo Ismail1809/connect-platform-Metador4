@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kuzunoha Detective Agency</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Inria Sans, Inter, sans-serif;
+    background: #171717;
+    color: white;
+  }
+
+  .page-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+    background: #b91c1c;
+    padding: 20px 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  header img {
+    height: 67px;
+  }
+
+  .search-bar {
+    position: relative;
+    width: 30vw;
+    max-width: 350px;
+    height: 47px;
+    background: #262626;
+    border-radius: 50px;
+  }
+
+  .search-bar .placeholder {
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #525252;
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  .hero {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+
+  .profile-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .title-block {
+    max-width: 600px;
+  }
+
+  .title-block h1 {
+    font-size: 2.5rem;
+    font-family: Inter;
+    margin: 0 0 10px 0;
+  }
+
+  .location {
+    font-size: 1.5rem;
+    color: #ddd;
+  }
+
+  .divider-vertical {
+    width: 1px;
+    background: white;
+    height: 300px;
+    margin: 40px auto;
+  }
+
+  .about-section,
+  .contact-section,
+  .positions-section {
+    padding: 20px 5vw;
+  }
+
+  .section-header {
+    color: #ff6b6b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .positions-list {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .bottom-info {
+    padding: 20px 5vw;
+  }
+
+  .page-container { height: 100vh; overflow: hidden; }
+
+@media (max-width: 768px) {
+    .title-block h1 {
+      font-size: 2rem;
+    }
+    .location {
+      font-size: 1.2rem;
+    }
+    .profile-img img {
+      width: 200px;
+      height: 200px;
+    }
+    .divider-vertical {
+      display: none;
+    }
+  }
+  .applicants-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #b91c1c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+</style>
+</head>
+<body>
+<div class="page-container">
+
+  <header>
+    <img src="https://placehold.co/58x67" alt="Logo" />
+    <div class="search-bar">
+      <div class="placeholder">Search...</div>
+    </div>
+  </header>
+
+  <section class="hero" style="display:flex; justify-content:center; align-items:flex-start; gap:4vw; padding:40px 5vw; margin-top:40px;">
+
+    <!-- LEFT SIDE: Profile + Button -->
+    <div class="left-panel" style="display:flex; flex-direction:column; align-items:center;">
+      <div class="profile-img">
+        <img src="https://placehold.co/274x274" alt="Profile" />
+        <button class="applicants-btn">Applicants</button>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="divider-vertical" style="width:2px; background:white; height:70vh;"> </div>
+
+    <!-- RIGHT SIDE: All Other Content -->
+    <div class="right-panel" style="max-width:600px; display:flex; flex-direction:column; gap:30px;">
+
+      <div class="title-block">
+        <h1>Kuzunoha Detective Agency</h1>
+        <div class="location">Corpus Christi, TX</div>
+      </div>
+
+      <section class="about-section">
+        <div class="section-header">About</div>
+        <p>Come work for the Devil Summoning detective! While prior experience with the supernatural or occult isn’t required, it does help.</p>
+      </section>
+
+      <section class="contact-section">
+        <div class="section-header">Contact Info</div>
+        <p><strong>Recruitment Office:</strong> <span style="color:#54b8d9;">361-371-1728</span></p>
+        <p><strong>Address:</strong> 4205 Cowhouse Creek Court, Corpus Christi, Texas</p>
+        <p><strong>Email:</strong> Kyouji@Kuzunoha.com</p>
+      </section>
+
+      <section class="positions-section">
+        <div class="section-header">Open Positions</div>
+        <div class="positions-list">
+          Backend Developer<br>
+          Frontend Developer<br>
+          Accountant
+        </div>
+      </section>
+
+    </div>
+
+</section>
+
+  <div class="divider-vertical"></div>
+
+  <section class="about-section">
+    <div class="section-header">About</div>
+    <p>
+      Come work for the Devil Summoning detective! While prior experience
+      with the supernatural or occult isn’t required, it does help.
+    </p>
+  </section>
+
+  <section class="contact-section">
+    <div class="section-header">Contact Info</div>
+    <p><strong>Recruitment Office:</strong> <span style="color:#54b8d9;">361-371-1728</span></p>
+    <p><strong>Address:</strong> 4205 Cowhouse Creek Court, Corpus Christi, Texas</p>
+    <p><strong>Email:</strong> Kyouji@Kuzunoha.com</p>
+  </section>
+
+  <section class="positions-section">
+    <div class="section-header">Open Positions</div>
+    <div class="positions-list">
+      Backend Developer<br>
+      Frontend Developer<br>
+      Accountant
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
