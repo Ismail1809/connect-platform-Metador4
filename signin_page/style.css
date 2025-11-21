@@ -85,7 +85,24 @@
   width: 31.86%;
   height: 58.62%;
   top: 20.69%;
-  left: 6.19%;
+  left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #525252;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.sign-in .search_em {
+  position: absolute;
+  width: 31.86%;
+  height: 58.62%;
+  top: 20.69%;
+  left: -10px;
   display: flex;
   align-items: center;
   justify-content: center;
