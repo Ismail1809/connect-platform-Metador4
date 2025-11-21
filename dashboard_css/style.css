@@ -1,0 +1,1551 @@
+.dashboard {
+    background-color: #171717;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 1024px;
+    position: relative;
+    overflow-x: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.dashboard .rectangle {
+    top: 354px;
+    left: 55px;
+    width: 409px;
+    height: 277px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .div {
+    top: 354px;
+    left: 516px;
+    width: 410px;
+    height: 277px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .text-wrapper {
+    top: 371px;
+    left: 230px;
+    width: 212px;
+    color: #f3f4f6;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .p {
+    top: 509px;
+    left: 75px;
+    color: #f3f4f6;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-2 {
+    top: 547px;
+    left: 75px;
+    width: 343px;
+    color: #f3f4f6;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-3 {
+    position: absolute;
+    top: 421px;
+    left: 317px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #f3f4f6;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-4 {
+    position: absolute;
+    top: 456px;
+    left: 270px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #f3f4f6;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .rectangle-2 {
+    top: 354px;
+    left: 975px;
+    width: 411px;
+    height: 277px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .text-wrapper-5 {
+    position: absolute;
+    top: 512px;
+    left: 1021px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-6 {
+    top: 547px;
+    left: 1021px;
+    width: 336px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-7 {
+    position: absolute;
+    top: 419px;
+    left: 1240px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-8 {
+    position: absolute;
+    top: 454px;
+    left: 1235px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .rectangle-3 {
+    top: 690px;
+    left: 55px;
+    width: 409px;
+    height: 277px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .rectangle-4 {
+    top: 690px;
+    left: 516px;
+    width: 410px;
+    height: 277px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .rectangle-5 {
+    top: 690px;
+    left: 975px;
+    width: 411px;
+    height: 277px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .rectangle-6 {
+    top: 138px;
+    left: 402px;
+    width: 293px;
+    height: 114px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .rectangle-7 {
+    top: 138px;
+    left: 749px;
+    width: 293px;
+    height: 114px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .rectangle-8 {
+    top: 138px;
+    left: 1092px;
+    width: 293px;
+    height: 114px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .line {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 1440px;
+    height: 1px;
+    object-fit: cover;
+}
+
+.dashboard .search-bar {
+    position: absolute;
+    top: 25px;
+    left: 959px;
+    width: 281px;
+    height: 36px;
+    background-color: #262626;
+    border-radius: 50px;
+}
+
+.dashboard .text-wrapper-9 {
+    position: absolute;
+    width: 31.86%;
+    height: 58.62%;
+    top: 20.69%;
+    left: 6.19%;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #525252;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.dashboard .icon-solid-search {
+    position: absolute;
+    width: 9.73%;
+    height: 72.41%;
+    top: 13.79%;
+    left: 84.96%;
+}
+
+.dashboard .icon {
+    position: absolute;
+    width: 80.00%;
+    height: 80.00%;
+    top: 10.00%;
+    left: 10.00%;
+}
+
+.dashboard .user-circle {
+    position: absolute;
+    width: 2.85%;
+    height: 4.00%;
+    top: 2.15%;
+    left: 88.54%;
+}
+
+.dashboard .icon-outline-logout {
+    position: absolute;
+    width: 2.71%;
+    height: 3.81%;
+    top: 2.25%;
+    left: 92.99%;
+}
+
+.dashboard .text-wrapper-10 {
+    position: absolute;
+    top: 33px;
+    left: 55px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #b91c1c;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.dashboard .group {
+    position: absolute;
+    top: 138px;
+    left: 55px;
+    width: 303px;
+    height: 114px;
+}
+
+.dashboard .rectangle-9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 293px;
+    height: 114px;
+    background-color: #262626;
+    border-radius: 15px;
+}
+
+.dashboard .text-wrapper-11 {
+    top: 84px;
+    left: 39px;
+    width: 32px;
+    color: #10b981;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-12 {
+    top: 11px;
+    left: 15px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #d1d5db;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-13 {
+    top: 37px;
+    left: 106px;
+    white-space: nowrap;
+    position: absolute;
+    width: 82px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-14 {
+    top: 87px;
+    left: 202px;
+    position: absolute;
+    width: 38px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4b5563;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-15 {
+    top: 149px;
+    left: 417px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #d1d5db;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-16 {
+    top: 175px;
+    left: 508px;
+    white-space: nowrap;
+    position: absolute;
+    width: 82px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-17 {
+    top: 222px;
+    left: 439px;
+    width: 34px;
+    color: #10b981;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-18 {
+    top: 225px;
+    left: 604px;
+    position: absolute;
+    width: 38px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4b5563;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .icon-solid-trending {
+    left: 473px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 220px;
+}
+
+.dashboard .icon-solid-chevron {
+    position: absolute;
+    top: 226px;
+    left: 643px;
+    width: 17px;
+    height: 17px;
+}
+
+.dashboard .text-wrapper-19 {
+    top: 149px;
+    left: 764px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #d1d5db;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-20 {
+    top: 175px;
+    left: 855px;
+    text-align: center;
+    position: absolute;
+    width: 82px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-21 {
+    top: 222px;
+    left: 796px;
+    width: 24px;
+    color: #dc2626;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-22 {
+    top: 225px;
+    left: 951px;
+    position: absolute;
+    width: 38px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4b5563;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .img {
+    position: absolute;
+    top: 226px;
+    left: 990px;
+    width: 17px;
+    height: 17px;
+}
+
+.dashboard .text-wrapper-23 {
+    top: 149px;
+    left: 1107px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #d1d5db;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-24 {
+    top: 175px;
+    left: 1198px;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    width: 82px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-25 {
+    top: 222px;
+    left: 1131px;
+    width: 32px;
+    color: #10b981;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-26 {
+    top: 225px;
+    left: 1294px;
+    position: absolute;
+    width: 38px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4b5563;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .icon-solid-trending-2 {
+    position: absolute;
+    top: 221px;
+    left: 1163px;
+    width: 23px;
+    height: 23px;
+}
+
+.dashboard .icon-solid-chevron-2 {
+    position: absolute;
+    top: 226px;
+    left: 1333px;
+    width: 17px;
+    height: 17px;
+}
+
+.dashboard .text-wrapper-27 {
+    position: absolute;
+    top: 325px;
+    left: 70px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #525252;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard .text-wrapper-28 {
+    position: absolute;
+    top: 663px;
+    left: 70px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #525252;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard .view-company-button {
+    position: absolute;
+    top: 588px;
+    left: 327px;
+    width: 115px;
+    height: 26px;
+    background-color: #b91c1c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard .rectangle-10 {
+    width: 96.52%;
+    height: 84.62%;
+    top: 7.69%;
+    left: 0;
+    border-radius: 8px;
+    position: absolute;
+    background-color: #262626;
+}
+
+.dashboard .text-wrapper-29 {
+    position: absolute;
+    width: 84.35%;
+    height: 57.69%;
+    top: 19.23%;
+    left: 7.83%;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #b91c1c;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .chatgpt-image-oct {
+    position: absolute;
+    top: 717px;
+    left: 91px;
+    width: 101px;
+    height: 69px;
+    aspect-ratio: 1.47;
+}
+
+.dashboard .chatgpt-image-oct-2 {
+    position: absolute;
+    top: 369px;
+    left: 556px;
+    width: 116px;
+    height: 102px;
+    aspect-ratio: 1.14;
+}
+
+.dashboard .chatgpt-image-oct-3 {
+    position: absolute;
+    top: 709px;
+    left: 555px;
+    width: 135px;
+    height: 103px;
+    aspect-ratio: 1.31;
+}
+
+.dashboard .chatgpt-image-oct-4 {
+    position: absolute;
+    top: 709px;
+    left: 1011px;
+    width: 120px;
+    height: 110px;
+    aspect-ratio: 1.09;
+}
+
+.dashboard .view-company-button-2 {
+    top: 927px;
+    left: 321px;
+    position: absolute;
+    width: 115px;
+    height: 26px;
+    background-color: #b91c1c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard .view-company-button-3 {
+    top: 925px;
+    left: 776px;
+    position: absolute;
+    width: 115px;
+    height: 26px;
+    background-color: #b91c1c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard .view-company-button-4 {
+    top: 588px;
+    left: 782px;
+    position: absolute;
+    width: 115px;
+    height: 26px;
+    background-color: #b91c1c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard .view-company-button-5 {
+    top: 588px;
+    left: 1248px;
+    position: absolute;
+    width: 115px;
+    height: 26px;
+    background-color: #b91c1c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard .view-company-button-6 {
+    top: 925px;
+    left: 1251px;
+    position: absolute;
+    width: 115px;
+    height: 26px;
+    background-color: #b91c1c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard .text-wrapper-30 {
+    position: absolute;
+    top: 374px;
+    left: 764px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-31 {
+    position: absolute;
+    top: 505px;
+    left: 550px;
+    width: 339px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-32 {
+    top: 547px;
+    left: 549px;
+    width: 339px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-33 {
+    position: absolute;
+    top: 409px;
+    left: 782px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-34 {
+    position: absolute;
+    top: 444px;
+    left: 773px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-35 {
+    position: absolute;
+    top: 744px;
+    left: 314px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-36 {
+    position: absolute;
+    top: 779px;
+    left: 288px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-37 {
+    top: 829px;
+    left: 91px;
+    width: 311px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-38 {
+    position: absolute;
+    top: 879px;
+    left: 91px;
+    width: 311px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-39 {
+    position: absolute;
+    top: 709px;
+    left: 247px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-40 {
+    top: 369px;
+    left: 1165px;
+    width: 198px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-41 {
+    top: 709px;
+    left: 725px;
+    width: 166px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-42 {
+    top: 829px;
+    left: 572px;
+    width: 329px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-43 {
+    top: 879px;
+    left: 573px;
+    width: 305px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-44 {
+    position: absolute;
+    top: 759px;
+    left: 761px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-45 {
+    position: absolute;
+    top: 794px;
+    left: 743px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-46 {
+    top: 709px;
+    left: 1153px;
+    width: 213px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-47 {
+    position: absolute;
+    top: 829px;
+    left: 1030px;
+    width: 354px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-48 {
+    top: 882px;
+    left: 1031px;
+    width: 312px;
+    color: #ffffff;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-49 {
+    position: absolute;
+    top: 759px;
+    left: 1244px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .text-wrapper-50 {
+    position: absolute;
+    top: 794px;
+    left: 1187px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard .icon-solid-trending-3 {
+    left: 822px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 220px;
+}
+
+.dashboard .chatgpt-image-oct-5 {
+    position: absolute;
+    top: 377px;
+    left: 81px;
+    width: 113px;
+    height: 117px;
+    aspect-ratio: 0.96;
+}
+
+.dashboard .chatgpt-image-oct-6 {
+    position: absolute;
+    top: 377px;
+    left: 1017px;
+    width: 107px;
+    height: 81px;
+    aspect-ratio: 1.32;
+}
+
+.dashboard .group-2 {
+    position: absolute;
+    top: 221px;
+    left: 126px;
+    width: 187px;
+    height: 23px;
+    display: flex;
+    gap: 147px;
+}
+
+.dashboard .icon-solid-trending-4 {
+    width: 23px;
+    height: 23px;
+}
+
+.dashboard .icon-solid-chevron-3 {
+    margin-top: 5px;
+    width: 17px;
+    height: 17px;
+}
+
+.dashboard .star-rating {
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #fbbf24;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    z-index: 4;
+}
+
+.dashboard .star-rating-1 {
+    top: 476px;
+    left: 270px;
+}
+
+.dashboard .star-rating-2 {
+    top: 474px;
+    left: 1235px;
+}
+
+.dashboard .star-rating-3 {
+    top: 464px;
+    left: 773px;
+}
+
+.dashboard .star-rating-4 {
+    top: 799px;
+    left: 288px;
+}
+
+.dashboard .star-rating-5 {
+    top: 814px;
+    left: 743px;
+}
+
+.dashboard .star-rating-6 {
+    top: 814px;
+    left: 1187px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #262626;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #f3f4f6;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #b91c1c;
+}
+
+.modal-title {
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #b91c1c;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+}
+
+.modal-body {
+    color: #f3f4f6;
+}
+
+.company-info-section {
+    margin-bottom: 25px;
+}
+
+.company-info-section h3 {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #b91c1c;
+    padding-bottom: 5px;
+}
+
+.company-info-section p {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.company-info-section strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.company-info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.company-info-section ul li {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-left: 20px;
+    position: relative;
+}
+
+.company-info-section ul li:before {
+    content: "•";
+    color: #b91c1c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Scrollbar styling for modal */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #171717;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #b91c1c;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #dc2626;
+}
+
+/* Responsive Breakpoints */
+
+/* Large Desktop (1920px and above) */
+@media screen and (min-width: 1920px) {
+    .dashboard {
+        min-width: 1920px;
+    }
+
+    /* Scale content for larger screens */
+    .dashboard .rectangle,
+    .dashboard .div,
+    .dashboard .rectangle-2,
+    .dashboard .rectangle-3,
+    .dashboard .rectangle-4,
+    .dashboard .rectangle-5 {
+        transform: scale(1.1);
+        transform-origin: top left;
+    }
+}
+
+/* Standard Desktop (1440px - 1919px) - Default styles already set */
+
+/* Medium Desktop (1280px - 1439px) */
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .dashboard {
+        min-width: 1280px;
+    }
+
+    /* Adjust spacing for job cards */
+    .dashboard .rectangle {
+        left: 40px;
+        width: 360px;
+    }
+
+    .dashboard .div {
+        left: 440px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-2 {
+        left: 840px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-3 {
+        left: 40px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-4 {
+        left: 440px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-5 {
+        left: 840px;
+        width: 360px;
+    }
+
+    /* Adjust text positions proportionally */
+    .dashboard .text-wrapper {
+        left: 180px;
+    }
+
+    .dashboard .text-wrapper-5 {
+        left: 860px;
+    }
+
+    .dashboard .text-wrapper-6 {
+        left: 860px;
+    }
+
+    .dashboard .text-wrapper-7 {
+        left: 1080px;
+    }
+
+    .dashboard .text-wrapper-8 {
+        left: 1075px;
+    }
+
+    /* Adjust star ratings for medium desktop */
+    .dashboard .star-rating-1 {
+        left: 180px;
+    }
+
+    .dashboard .star-rating-2 {
+        left: 1075px;
+    }
+
+    .dashboard .star-rating-3 {
+        left: 680px;
+    }
+
+    .dashboard .star-rating-4 {
+        left: 200px;
+    }
+
+    .dashboard .star-rating-5 {
+        left: 600px;
+    }
+
+    .dashboard .star-rating-6 {
+        left: 1020px;
+    }
+
+    /* Adjust view buttons */
+    .dashboard .view-company-button {
+        left: 280px;
+    }
+
+    .dashboard .view-company-button-2 {
+        left: 274px;
+    }
+
+    .dashboard .view-company-button-3 {
+        left: 674px;
+    }
+
+    .dashboard .view-company-button-4 {
+        left: 680px;
+    }
+
+    .dashboard .view-company-button-5 {
+        left: 1088px;
+    }
+
+    .dashboard .view-company-button-6 {
+        left: 1091px;
+    }
+}
+
+/* Tablet Landscape (1024px - 1279px) */
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .dashboard {
+        min-width: 1024px;
+    }
+
+    /* Stack cards in 2 columns */
+    .dashboard .rectangle,
+    .dashboard .rectangle-3 {
+        left: 30px;
+        width: 450px;
+    }
+
+    .dashboard .div,
+    .dashboard .rectangle-4 {
+        left: 520px;
+        width: 450px;
+    }
+
+    .dashboard .rectangle-2 {
+        left: 30px;
+        top: 690px;
+        width: 450px;
+    }
+
+    .dashboard .rectangle-5 {
+        left: 520px;
+        top: 690px;
+        width: 450px;
+    }
+}
+
+/* Tablet Portrait (768px - 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .dashboard {
+        min-width: 768px;
+    }
+
+    /* Stack cards vertically */
+    .dashboard .rectangle,
+    .dashboard .div,
+    .dashboard .rectangle-2,
+    .dashboard .rectangle-3,
+    .dashboard .rectangle-4,
+    .dashboard .rectangle-5 {
+        left: 30px;
+        width: 708px;
+    }
+
+    .dashboard .div {
+        top: 680px;
+    }
+
+    .dashboard .rectangle-2 {
+        top: 1006px;
+    }
+
+    .dashboard .rectangle-3 {
+        top: 1332px;
+    }
+
+    .dashboard .rectangle-4 {
+        top: 1658px;
+    }
+
+    .dashboard .rectangle-5 {
+        top: 1984px;
+    }
+
+    .dashboard {
+        min-height: 2310px;
+    }
+}
+
+/* Mobile (767px and below) */
+@media screen and (max-width: 767px) {
+    .dashboard {
+        min-width: 375px;
+        padding: 10px;
+    }
+
+    /* Stack everything vertically */
+    .dashboard .rectangle,
+    .dashboard .div,
+    .dashboard .rectangle-2,
+    .dashboard .rectangle-3,
+    .dashboard .rectangle-4,
+    .dashboard .rectangle-5 {
+        position: relative;
+        width: 100%;
+        max-width: 355px;
+        left: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust header */
+    .dashboard .text-wrapper-10 {
+        font-size: 28px;
+        left: 20px;
+    }
+
+    /* Adjust search bar */
+    .dashboard .search-bar {
+        width: 200px;
+        left: auto;
+        right: 80px;
+    }
+
+    /* Stack stat cards */
+    .dashboard .group,
+    .dashboard .rectangle-6,
+    .dashboard .rectangle-7,
+    .dashboard .rectangle-8 {
+        position: relative;
+        width: 100%;
+        max-width: 355px;
+        left: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Modal Responsive Styles */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        max-height: 90vh;
+    }
+
+    .modal-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .company-info-section h3 {
+        font-size: 16px;
+    }
+
+    .company-info-section p,
+    .company-info-section ul li {
+        font-size: 13px;
+    }
+
+    .close-button {
+        font-size: 24px;
+        top: 10px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 98%;
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .company-info-section h3 {
+        font-size: 15px;
+    }
+
+    .company-info-section p,
+    .company-info-section ul li {
+        font-size: 12px;
+    }
+}
+
+/* Ensure proper stacking order */
+.dashboard > * {
+    position: absolute;
+}
+
+.dashboard .line {
+    z-index: 1;
+}
+
+.dashboard .search-bar,
+.dashboard .user-circle,
+.dashboard .icon-outline-logout,
+.dashboard .text-wrapper-10 {
+    z-index: 10;
+}
+
+.dashboard .group,
+.dashboard .rectangle-6,
+.dashboard .rectangle-7,
+.dashboard .rectangle-8 {
+    z-index: 5;
+}
+
+.dashboard .rectangle,
+.dashboard .div,
+.dashboard .rectangle-2,
+.dashboard .rectangle-3,
+.dashboard .rectangle-4,
+.dashboard .rectangle-5 {
+    z-index: 2;
+}
+
+.dashboard .view-company-button,
+.dashboard .view-company-button-2,
+.dashboard .view-company-button-3,
+.dashboard .view-company-button-4,
+.dashboard .view-company-button-5,
+.dashboard .view-company-button-6 {
+    z-index: 3;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard .view-company-button:hover,
+.dashboard .view-company-button-2:hover,
+.dashboard .view-company-button-3:hover,
+.dashboard .view-company-button-4:hover,
+.dashboard .view-company-button-5:hover,
+.dashboard .view-company-button-6:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(185, 28, 28, 0.4);
+}
+
+/* Ensure text is always above backgrounds */
+.dashboard [class*="text-wrapper"],
+.dashboard .p,
+.dashboard .star-rating {
+    z-index: 4;
+}
+
+/* Ensure images are properly layered */
+.dashboard img {
+    z-index: 3;
+}
