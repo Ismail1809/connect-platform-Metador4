@@ -13,14 +13,16 @@
     <div class="div"></div>
     <p class="text-wrapper">Position: Structural Design Engineer (Entry Level)</p>
     <p class="p">About: Designs earthquake-resistant buildings and towers.</p>
-    <p class="text-wrapper-2">What You’ll Do: Model structures, check safety codes, and assist senior engineers.</p>
+    <p class="text-wrapper-2">What You'll Do: Model structures, check safety codes, and assist senior engineers.</p>
     <div class="text-wrapper-3">Location: Seattle, WA</div>
     <div class="text-wrapper-4">Start Date: Ongoing openings</div>
+    <div class="star-rating star-rating-1">Rating: ★★★★☆</div>
     <div class="rectangle-2"></div>
     <p class="text-wrapper-5">About: Works on highway and road improvement projects.</p>
-    <p class="text-wrapper-6">What You’ll Do: Collect traffic data, design road layouts, and inspect field work.</p>
+    <p class="text-wrapper-6">What You'll Do: Collect traffic data, design road layouts, and inspect field work.</p>
     <div class="text-wrapper-7">Location: Atlanta, GA</div>
     <div class="text-wrapper-8">Start Date: June 2025</div>
+    <div class="star-rating star-rating-2">Rating: ★★★★★</div>
     <div class="rectangle-3"></div>
     <div class="rectangle-4"></div>
     <div class="rectangle-5"></div>
@@ -95,25 +97,29 @@
     </div>
     <div class="text-wrapper-30">Project Engineer Intern</div>
     <p class="text-wrapper-31">About: Large construction firm building city infrastructure and offices.</p>
-    <p class="text-wrapper-32">What You’ll Do: Visit job sites, track project progress, and assist with planning.</p>
+    <p class="text-wrapper-32">What You'll Do: Visit job sites, track project progress, and assist with planning.</p>
     <div class="text-wrapper-33">Location: Dallas, TX</div>
     <div class="text-wrapper-34">Start Date: May 2025</div>
+    <div class="star-rating star-rating-3">Rating: ★★★☆☆</div>
     <div class="text-wrapper-35">Location: Denver, CO</div>
     <div class="text-wrapper-36">Start Date: Summer 2025</div>
-    <p class="text-wrapper-37">What You’ll Do: Help inspect bridges, draft plans, and support design reports.</p>
+    <div class="star-rating star-rating-4">Rating: ★★★★☆</div>
+    <p class="text-wrapper-37">What You'll Do: Help inspect bridges, draft plans, and support design reports.</p>
     <p class="text-wrapper-38">About: Focus on bridge design and river crossing projects.</p>
     <div class="text-wrapper-39">Position: Civil Engineering Intern</div>
     <div class="text-wrapper-40">Position: Transportation Engineer (Graduate)</div>
     <p class="text-wrapper-41">Position: Environmental Civil Engineer Intern</p>
     <p class="text-wrapper-42">About: Designs green urban projects using eco-friendly materials.</p>
-    <p class="text-wrapper-43">What You’ll Do: Support sustainability studies, CAD design, and energy reports.</p>
+    <p class="text-wrapper-43">What You'll Do: Support sustainability studies, CAD design, and energy reports.</p>
     <div class="text-wrapper-44">Location: Portland, OR</div>
     <div class="text-wrapper-45">Start Date: Summer 2025</div>
+    <div class="star-rating star-rating-5">Rating: ★★★★★</div>
     <div class="text-wrapper-46">Position: Construction Management Intern</div>
     <p class="text-wrapper-47">About: Specializes in smart building systems and site technology.</p>
-    <p class="text-wrapper-48">What You’ll Do: Assist with cost tracking, scheduling, and on-site coordination.</p>
+    <p class="text-wrapper-48">What You'll Do: Assist with cost tracking, scheduling, and on-site coordination.</p>
     <div class="text-wrapper-49">Location: Chicago, IL</div>
     <div class="text-wrapper-50">Start Date: Rolling applications</div>
+    <div class="star-rating star-rating-6">Rating: ★★★★☆</div>
     <img class="icon-solid-trending-3" src="dashboard_assets/trending_down.svg" />
     <img class="chatgpt-image-oct-5" src="img/chatgpt-image-oct-17-2025-06-57-04-PM-2.png" />
     <img class="chatgpt-image-oct-6" src="img/chatgpt-image-oct-17-2025-06-57-04-PM-4.png" />
@@ -121,6 +127,70 @@
         <img class="icon-solid-trending-4" src="dashboard_assets/trending_up.svg" />
         <img class="icon-solid-chevron-3" src="dashboard_assets/chevron_down.svg" />
     </div>
+
+    <!-- Company Info Popup Modal -->
+    <div id="companyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 class="modal-title">Company Information</h2>
+            <div class="modal-body">
+                <div class="company-info-section">
+                    <h3>About the Company</h3>
+                    <p>Leading civil engineering firm with over 25 years of experience in infrastructure development, sustainable design, and innovative construction solutions.</p>
+                </div>
+                <div class="company-info-section">
+                    <h3>Company Details</h3>
+                    <p><strong>Industry:</strong> Civil Engineering & Construction</p>
+                    <p><strong>Company Size:</strong> 500-1000 employees</p>
+                    <p><strong>Founded:</strong> 1998</p>
+                    <p><strong>Headquarters:</strong> United States</p>
+                </div>
+                <div class="company-info-section">
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>Competitive salary and performance bonuses</li>
+                        <li>Health, dental, and vision insurance</li>
+                        <li>401(k) matching program</li>
+                        <li>Professional development opportunities</li>
+                        <li>Flexible work arrangements</li>
+                    </ul>
+                </div>
+                <div class="company-info-section">
+                    <h3>Contact</h3>
+                    <p><strong>Email:</strong> careers@company.com</p>
+                    <p><strong>Website:</strong> www.company.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script>
+    // Get modal element
+    const modal = document.getElementById('companyModal');
+    const closeButton = document.querySelector('.close-button');
+
+    // Get all view company buttons
+    const viewButtons = document.querySelectorAll('[class^="view-company-button"]');
+
+    // Add click event to all view company buttons
+    viewButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+    });
+
+    // Close modal when clicking the X button
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>

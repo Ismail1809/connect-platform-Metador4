@@ -2,8 +2,11 @@
     background-color: #171717;
     width: 100%;
     min-width: 1440px;
-    height: 1024px;
+    min-height: 1024px;
     position: relative;
+    overflow-x: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .dashboard .rectangle {
@@ -587,6 +590,7 @@
     height: 26px;
     background-color: #b91c1c;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .dashboard .rectangle-10 {
@@ -657,6 +661,7 @@
     height: 26px;
     background-color: #b91c1c;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .dashboard .view-company-button-3 {
@@ -667,6 +672,7 @@
     height: 26px;
     background-color: #b91c1c;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .dashboard .view-company-button-4 {
@@ -677,6 +683,7 @@
     height: 26px;
     background-color: #b91c1c;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .dashboard .view-company-button-5 {
@@ -687,6 +694,7 @@
     height: 26px;
     background-color: #b91c1c;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .dashboard .view-company-button-6 {
@@ -697,6 +705,7 @@
     height: 26px;
     background-color: #b91c1c;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .dashboard .text-wrapper-30 {
@@ -1007,4 +1016,536 @@
     margin-top: 5px;
     width: 17px;
     height: 17px;
+}
+
+.dashboard .star-rating {
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #fbbf24;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    z-index: 4;
+}
+
+.dashboard .star-rating-1 {
+    top: 476px;
+    left: 270px;
+}
+
+.dashboard .star-rating-2 {
+    top: 474px;
+    left: 1235px;
+}
+
+.dashboard .star-rating-3 {
+    top: 464px;
+    left: 773px;
+}
+
+.dashboard .star-rating-4 {
+    top: 799px;
+    left: 288px;
+}
+
+.dashboard .star-rating-5 {
+    top: 814px;
+    left: 743px;
+}
+
+.dashboard .star-rating-6 {
+    top: 814px;
+    left: 1187px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #262626;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #f3f4f6;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #b91c1c;
+}
+
+.modal-title {
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #b91c1c;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+}
+
+.modal-body {
+    color: #f3f4f6;
+}
+
+.company-info-section {
+    margin-bottom: 25px;
+}
+
+.company-info-section h3 {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #b91c1c;
+    padding-bottom: 5px;
+}
+
+.company-info-section p {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.company-info-section strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.company-info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.company-info-section ul li {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-left: 20px;
+    position: relative;
+}
+
+.company-info-section ul li:before {
+    content: "•";
+    color: #b91c1c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Scrollbar styling for modal */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #171717;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #b91c1c;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #dc2626;
+}
+
+/* Responsive Breakpoints */
+
+/* Large Desktop (1920px and above) */
+@media screen and (min-width: 1920px) {
+    .dashboard {
+        min-width: 1920px;
+    }
+
+    /* Scale content for larger screens */
+    .dashboard .rectangle,
+    .dashboard .div,
+    .dashboard .rectangle-2,
+    .dashboard .rectangle-3,
+    .dashboard .rectangle-4,
+    .dashboard .rectangle-5 {
+        transform: scale(1.1);
+        transform-origin: top left;
+    }
+}
+
+/* Standard Desktop (1440px - 1919px) - Default styles already set */
+
+/* Medium Desktop (1280px - 1439px) */
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .dashboard {
+        min-width: 1280px;
+    }
+
+    /* Adjust spacing for job cards */
+    .dashboard .rectangle {
+        left: 40px;
+        width: 360px;
+    }
+
+    .dashboard .div {
+        left: 440px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-2 {
+        left: 840px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-3 {
+        left: 40px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-4 {
+        left: 440px;
+        width: 360px;
+    }
+
+    .dashboard .rectangle-5 {
+        left: 840px;
+        width: 360px;
+    }
+
+    /* Adjust text positions proportionally */
+    .dashboard .text-wrapper {
+        left: 180px;
+    }
+
+    .dashboard .text-wrapper-5 {
+        left: 860px;
+    }
+
+    .dashboard .text-wrapper-6 {
+        left: 860px;
+    }
+
+    .dashboard .text-wrapper-7 {
+        left: 1080px;
+    }
+
+    .dashboard .text-wrapper-8 {
+        left: 1075px;
+    }
+
+    /* Adjust star ratings for medium desktop */
+    .dashboard .star-rating-1 {
+        left: 180px;
+    }
+
+    .dashboard .star-rating-2 {
+        left: 1075px;
+    }
+
+    .dashboard .star-rating-3 {
+        left: 680px;
+    }
+
+    .dashboard .star-rating-4 {
+        left: 200px;
+    }
+
+    .dashboard .star-rating-5 {
+        left: 600px;
+    }
+
+    .dashboard .star-rating-6 {
+        left: 1020px;
+    }
+
+    /* Adjust view buttons */
+    .dashboard .view-company-button {
+        left: 280px;
+    }
+
+    .dashboard .view-company-button-2 {
+        left: 274px;
+    }
+
+    .dashboard .view-company-button-3 {
+        left: 674px;
+    }
+
+    .dashboard .view-company-button-4 {
+        left: 680px;
+    }
+
+    .dashboard .view-company-button-5 {
+        left: 1088px;
+    }
+
+    .dashboard .view-company-button-6 {
+        left: 1091px;
+    }
+}
+
+/* Tablet Landscape (1024px - 1279px) */
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .dashboard {
+        min-width: 1024px;
+    }
+
+    /* Stack cards in 2 columns */
+    .dashboard .rectangle,
+    .dashboard .rectangle-3 {
+        left: 30px;
+        width: 450px;
+    }
+
+    .dashboard .div,
+    .dashboard .rectangle-4 {
+        left: 520px;
+        width: 450px;
+    }
+
+    .dashboard .rectangle-2 {
+        left: 30px;
+        top: 690px;
+        width: 450px;
+    }
+
+    .dashboard .rectangle-5 {
+        left: 520px;
+        top: 690px;
+        width: 450px;
+    }
+}
+
+/* Tablet Portrait (768px - 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .dashboard {
+        min-width: 768px;
+    }
+
+    /* Stack cards vertically */
+    .dashboard .rectangle,
+    .dashboard .div,
+    .dashboard .rectangle-2,
+    .dashboard .rectangle-3,
+    .dashboard .rectangle-4,
+    .dashboard .rectangle-5 {
+        left: 30px;
+        width: 708px;
+    }
+
+    .dashboard .div {
+        top: 680px;
+    }
+
+    .dashboard .rectangle-2 {
+        top: 1006px;
+    }
+
+    .dashboard .rectangle-3 {
+        top: 1332px;
+    }
+
+    .dashboard .rectangle-4 {
+        top: 1658px;
+    }
+
+    .dashboard .rectangle-5 {
+        top: 1984px;
+    }
+
+    .dashboard {
+        min-height: 2310px;
+    }
+}
+
+/* Mobile (767px and below) */
+@media screen and (max-width: 767px) {
+    .dashboard {
+        min-width: 375px;
+        padding: 10px;
+    }
+
+    /* Stack everything vertically */
+    .dashboard .rectangle,
+    .dashboard .div,
+    .dashboard .rectangle-2,
+    .dashboard .rectangle-3,
+    .dashboard .rectangle-4,
+    .dashboard .rectangle-5 {
+        position: relative;
+        width: 100%;
+        max-width: 355px;
+        left: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust header */
+    .dashboard .text-wrapper-10 {
+        font-size: 28px;
+        left: 20px;
+    }
+
+    /* Adjust search bar */
+    .dashboard .search-bar {
+        width: 200px;
+        left: auto;
+        right: 80px;
+    }
+
+    /* Stack stat cards */
+    .dashboard .group,
+    .dashboard .rectangle-6,
+    .dashboard .rectangle-7,
+    .dashboard .rectangle-8 {
+        position: relative;
+        width: 100%;
+        max-width: 355px;
+        left: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Modal Responsive Styles */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        max-height: 90vh;
+    }
+
+    .modal-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .company-info-section h3 {
+        font-size: 16px;
+    }
+
+    .company-info-section p,
+    .company-info-section ul li {
+        font-size: 13px;
+    }
+
+    .close-button {
+        font-size: 24px;
+        top: 10px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 98%;
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .company-info-section h3 {
+        font-size: 15px;
+    }
+
+    .company-info-section p,
+    .company-info-section ul li {
+        font-size: 12px;
+    }
+}
+
+/* Ensure proper stacking order */
+.dashboard > * {
+    position: absolute;
+}
+
+.dashboard .line {
+    z-index: 1;
+}
+
+.dashboard .search-bar,
+.dashboard .user-circle,
+.dashboard .icon-outline-logout,
+.dashboard .text-wrapper-10 {
+    z-index: 10;
+}
+
+.dashboard .group,
+.dashboard .rectangle-6,
+.dashboard .rectangle-7,
+.dashboard .rectangle-8 {
+    z-index: 5;
+}
+
+.dashboard .rectangle,
+.dashboard .div,
+.dashboard .rectangle-2,
+.dashboard .rectangle-3,
+.dashboard .rectangle-4,
+.dashboard .rectangle-5 {
+    z-index: 2;
+}
+
+.dashboard .view-company-button,
+.dashboard .view-company-button-2,
+.dashboard .view-company-button-3,
+.dashboard .view-company-button-4,
+.dashboard .view-company-button-5,
+.dashboard .view-company-button-6 {
+    z-index: 3;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard .view-company-button:hover,
+.dashboard .view-company-button-2:hover,
+.dashboard .view-company-button-3:hover,
+.dashboard .view-company-button-4:hover,
+.dashboard .view-company-button-5:hover,
+.dashboard .view-company-button-6:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(185, 28, 28, 0.4);
+}
+
+/* Ensure text is always above backgrounds */
+.dashboard [class*="text-wrapper"],
+.dashboard .p,
+.dashboard .star-rating {
+    z-index: 4;
+}
+
+/* Ensure images are properly layered */
+.dashboard img {
+    z-index: 3;
 }

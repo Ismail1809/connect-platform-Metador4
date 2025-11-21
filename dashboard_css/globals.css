@@ -3,10 +3,19 @@
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
 html,
 body {
     margin: 0px;
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: #171717;
 }
 /* a blue color as a generic focus style */
 button:focus-visible {
@@ -15,4 +24,10 @@ button:focus-visible {
 }
 a {
     text-decoration: none;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
