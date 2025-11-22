@@ -49,10 +49,10 @@ body {
   gap: 10px;
 }
 .logo-placeholder {
-  width: 40px;
-  height: 40px;
+  width: 58px;
+  height: 67px;
   border-radius: 8px;
-  background: #fff;
+  background: none;
   color: var(--accent);
   display: flex;
   align-items: center;
@@ -148,7 +148,7 @@ body {
 }
 .card-section h3 {
   margin: 0 0 8px 0;
-  color: var(--accent);
+  color: red;
 }
 .card-section .small {
   color: var(--muted);

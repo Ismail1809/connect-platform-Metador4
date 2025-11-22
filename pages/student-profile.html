@@ -4,15 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>User Profile</title>
-    <link rel="stylesheet" href="user-profile-css/globals.css" />
-    <link rel="stylesheet" href="user-profile-css/styleguide.css" />
-    <link rel="stylesheet" href="user-profile-css/style.css" />
+    <link rel="stylesheet" href="../assets/css/globals.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/pages-css/student-profile.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <div class="logo-placeholder">TT</div>
+          <a href="home-page.html">
+            <img
+              src="../assets/img/student_profile_img/Texas_Tech_Athletics_logo.svg (1).png"
+              alt="Texas Tech Athletics logo"
+              class="logo-placeholder"
+            />
+          </a>
           <span class="brand-name">Profile</span>
         </div>
         <div class="header-actions">
@@ -31,7 +37,7 @@
             id="photoPreview"
             alt="profile photo"
             class="photo"
-            src="user-profile-assets/images/profile-placeholder.svg"
+            src="../assets/img/student_profile_img/profile-placeholder.svg"
           />
           <label class="upload-btn">
             <input id="photoInput" type="file" accept="image/*" />
@@ -112,7 +118,8 @@
             <br />
 
             <div class="panel-subsection">
-              <h4>Contact Info:</h4>
+              <h4 style="color: red">Contact Info:</h4>
+              <br />
               <p>Address: 2508 Broadway St, Lubbock TX, 79406</p>
               <p>Phone: +1 806-309-6478</p>
               <p>Email: iismayil@ttu.edu</p>
@@ -120,7 +127,8 @@
             <br />
 
             <div class="panel-subsection">
-              <h4>Basic Info:</h4>
+              <h4 style="color: red">Basic Info:</h4>
+              <br />
               <ul class="info-list">
                 <li><strong>Birthday:</strong> 09/18/2006</li>
                 <li><strong>Gender:</strong> Male</li>
@@ -206,6 +214,6 @@
       <div class="container">©2025 Metador4. Built with passion.</div>
     </footer>
 
-    <script src="user-profile-assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
