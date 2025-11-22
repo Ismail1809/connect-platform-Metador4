@@ -67,13 +67,37 @@ body {
   gap: 12px;
   align-items: center;
 }
+.header-actions .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .header-actions .search input {
   background: #262626;
   border: 0;
-  padding: 10px 14px;
+  padding: 10px 14px 10px 40px;
   border-radius: 24px;
   color: var(--muted);
   min-width: 220px;
+  font-size: 14px;
+}
+
+.header-actions .search input::placeholder {
+  color: var(--muted);
+}
+
+.header-actions .search input:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.2);
+  outline-offset: 2px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
 }
 .btn {
   background: transparent;
@@ -90,6 +114,16 @@ body {
 }
 .btn.ghost {
   background: transparent;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.logout-btn img {
+  width: 18px;
+  height: 18px;
 }
 
 .main-grid {

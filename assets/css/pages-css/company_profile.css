@@ -1,153 +1,729 @@
-body {
-  margin: 0;
-  font-family: Inria Sans, Inter, sans-serif;
-  background: #171717;
-  color: white;
+:root {
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --card-dark: #262626;
+  --muted: #9aa0a6;
+  --accent: #b91c1c;
+  --accent-2: #05cee4;
+  --text: #fff;
+  --text-secondary: #d1d5db;
+  --radius: 12px;
+  --max-width: 1200px;
 }
 
-.page-container {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-}
-
-header {
-  width: 100%;
-  background: #b91c1c;
-  padding: 20px 4vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+* {
   box-sizing: border-box;
 }
 
-header img {
+/* Header Styles - Matching student-profile.html */
+.site-header {
+  background: var(--accent);
+  color: #fff;
+  padding: 25px 0; /* reduced vertical padding for a sleeker header */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-placeholder {
+  width: 58px;
   height: 67px;
+  border-radius: 8px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.search-bar {
+.brand-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.header-actions .search {
   position: relative;
-  width: 30vw;
-  max-width: 350px;
-  height: 47px;
-  background: #262626;
-  border-radius: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.search-bar .placeholder {
-  position: absolute;
-  left: 22px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #525252;
-  font-weight: 800;
+.header-actions .search input {
+  background: #262626;
+  border: 0;
+  padding: 10px 14px 10px 40px;
+  border-radius: 24px;
+  color: var(--muted);
+  min-width: 220px;
   font-size: 14px;
 }
 
-.hero {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 5vw;
+.header-actions .search input::placeholder {
+  color: var(--muted);
 }
 
-.profile-img img {
+.header-actions .search input:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.2);
+  outline-offset: 2px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: none;
+  padding: 6px;
+}
+
+/* Main Content */
+.company-profile-main {
+  background: var(--bg);
+  min-height: calc(100vh - 80px);
+  padding: 40px 0;
+}
+
+.profile-hero {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Profile Sidebar */
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 40px;
+}
+
+.profile-image-wrapper {
   width: 250px;
   height: 250px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.title-block {
-  max-width: 600px;
+.applicants-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  max-width: 250px;
 }
 
-.title-block h1 {
+.applicants-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(185, 28, 28, 0.4);
+}
+
+.applicants-btn:active {
+  transform: translateY(0);
+}
+
+/* Profile Content */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 700px;
+}
+
+.company-header {
+  margin-bottom: 8px;
+}
+
+.company-name {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   font-size: 2.5rem;
-  font-family: Inter;
-  margin: 0 0 10px 0;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: var(--text);
+  line-height: 1.2;
 }
 
-.location {
+.company-location {
   font-size: 1.5rem;
-  color: #ddd;
+  color: var(--text-secondary);
+  margin: 0;
+  font-weight: 400;
 }
 
-.divider-vertical {
-  width: 1px;
-  background: white;
-  height: 300px;
-  margin: 40px auto;
-}
-
-.about-section,
-.contact-section,
-.positions-section {
-  padding: 20px 5vw;
+.info-section {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.01)
+    ),
+    var(--card);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .section-header {
-  color: #ff6b6b;
+  color: var(--accent);
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  font-family: "Inter-SemiBold", Helvetica;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 8px;
+}
+
+.section-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-details p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-details strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.contact-link {
+  color: var(--accent-2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: #05b8d4;
+  text-decoration: underline;
 }
 
 .positions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.positions-list li {
+  color: var(--text-secondary);
   font-size: 1.2rem;
   line-height: 1.8;
+  padding-left: 20px;
+  position: relative;
 }
 
-.bottom-info {
-  padding: 20px 5vw;
-}
-
-.page-container {
-  height: 100vh;
-  overflow: hidden;
-}
-footer {
-  width: 100%;
-  background: #b91c1c;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
+.positions-list li:before {
+  content: "•";
+  color: var(--accent);
+  font-weight: bold;
   position: absolute;
-  bottom: 0;
   left: 0;
+  font-size: 1.5rem;
 }
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
+
+/* Footer */
+.site-footer {
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 60px;
 }
-footer a {
-  color: white;
-  text-decoration: underline;
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .profile-hero {
+    grid-template-columns: 250px 1fr;
+    gap: 32px;
+  }
+
+  .company-name {
+    font-size: 2rem;
+  }
+
+  .company-location {
+    font-size: 1.25rem;
+  }
 }
-footer a:hover {
-  color: #ff6b6b;
-}
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .header-actions .search input {
+    min-width: 150px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .company-profile-main {
+    padding: 24px 0;
+  }
+
+  .profile-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .profile-sidebar {
+    position: static;
     align-items: center;
   }
-  .divider-vertical {
-    display: none;
+
+  .profile-image-wrapper {
+    width: 200px;
+    height: 200px;
   }
-  .title-block {
+
+  .applicants-btn {
+    max-width: 200px;
+  }
+
+  .profile-content {
+    max-width: 100%;
+  }
+
+  .company-name {
+    font-size: 1.75rem;
     text-align: center;
-    margin-top: 20px;
+  }
+
+  .company-location {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .info-section {
+    padding: 20px;
+  }
+
+  .section-header {
+    font-size: 1.25rem;
+  }
+
+  .section-text,
+  .contact-details p {
+    font-size: 0.95rem;
+  }
+
+  .positions-list li {
+    font-size: 1.1rem;
   }
 }
-@media (max-width: 480px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
+
+@media screen and (max-width: 480px) {
+  .header-actions {
+    gap: 8px;
   }
-  .search-bar {
+
+  .header-actions .search input {
+    min-width: 120px;
+    padding: 8px 12px 8px 36px;
+  }
+
+  .search-icon {
+    left: 10px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .profile-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .company-name {
+    font-size: 1.5rem;
+  }
+
+  .company-location {
+    font-size: 1rem;
+  }
+
+  .info-section {
+    padding: 16px;
+  }
+
+  .section-header {
+    font-size: 1.1rem;
+  }
+
+  .section-text,
+  .contact-details p {
+    font-size: 0.9rem;
+  }
+
+  .positions-list li {
+    font-size: 1rem;
+  }
+}
+
+/* Focus styles for accessibility */
+.btn:focus-visible,
+.applicants-btn:focus-visible,
+.contact-link:focus-visible {
+  outline: 3px solid rgba(5, 206, 228, 0.5);
+  outline-offset: 2px;
+}
+
+/* Applicants Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: var(--card-dark);
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text);
+  cursor: pointer;
+  transition: color 0.3s;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  color: var(--accent);
+}
+
+.modal-title {
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+}
+
+.applicants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.applicant-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.applicant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.applicant-info {
+  flex: 1;
+}
+
+.applicant-name {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 20px;
+  margin: 0 0 4px 0;
+}
+
+.applicant-meta {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 400;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.applicant-status {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.status-under-review {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.status-interview {
+  background: rgba(5, 206, 228, 0.2);
+  color: var(--accent-2);
+}
+
+.status-accepted {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.applicant-details {
+  margin-bottom: 16px;
+}
+
+.applicant-details p {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 400;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.applicant-details strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.applicant-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.accept-btn {
+  background: var(--success);
+  color: var(--text);
+}
+
+.accept-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
+}
+
+.reject-btn {
+  background: var(--error);
+  color: var(--text);
+}
+
+.reject-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.4);
+}
+
+.view-btn {
+  background: var(--accent);
+  color: var(--text);
+}
+
+.view-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(185, 28, 28, 0.4);
+}
+
+/* Modal Scrollbar */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: var(--bg);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+    max-height: 90vh;
+  }
+
+  .modal-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .applicant-card {
+    padding: 16px;
+  }
+
+  .applicant-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .applicant-name {
+    font-size: 18px;
+  }
+
+  .applicant-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
     width: 100%;
-    max-width: none;
-    margin-top: 10px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .site-header,
+  .site-footer,
+  .applicants-btn,
+  .modal {
+    display: none;
+  }
+
+  .company-profile-main {
+    padding: 0;
   }
 }
