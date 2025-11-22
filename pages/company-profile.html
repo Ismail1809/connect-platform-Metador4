@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuzunoha Detective Agency</title>
+    <link rel="stylesheet" href="../assets/css/globals.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/pages-css/company_profile.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="home-page.html">
+            <img
+              src="../assets/img/student_profile_img/Texas_Tech_Athletics_logo.svg (1).png"
+              alt="Texas Tech Athletics logo"
+              class="logo-placeholder"
+            />
+          </a>
+          <!-- <span class="brand-name">Company Profile</span> -->
+        </div>
+        <div class="header-actions">
+          <div class="search">
+            <input aria-label="Search" placeholder="Search..." />
+            <img
+              class="search-icon"
+              src="../assets/img/dashboard_img/searchicon.svg"
+              alt="Search"
+            />
+          </div>
+          <button class="btn ghost profile-btn" aria-label="Profile">
+            <img
+              src="../assets/img/dashboard_img/profile_icon.svg"
+              alt="Profile"
+            />
+          </button>
+          <a href="sign_in.html">
+            <button class="btn ghost logout-btn" aria-label="Logout">
+              <img
+                src="../assets/img/home_page_img/logout-icon.png"
+                alt="Logout"
+              />
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="company-profile-main">
+      <div class="container">
+        <section class="profile-hero">
+          <!-- LEFT SIDE: Profile + Button -->
+          <aside class="profile-sidebar">
+            <div class="profile-image-wrapper">
+              <img
+                src="../assets/img/student_profile_img/profile-placeholder.svg"
+                alt="Company Profile"
+                class="profile-image"
+              />
+            </div>
+            <button class="applicants-btn" id="applicantsBtn">Applicants</button>
+          </aside>
+
+          <!-- RIGHT SIDE: Company Information -->
+          <div class="profile-content">
+            <div class="company-header">
+              <h1 class="company-name">Kuzunoha Detective Agency</h1>
+              <p class="company-location">Corpus Christi, TX</p>
+            </div>
+
+            <section class="info-section">
+              <h2 class="section-header">About</h2>
+              <p class="section-text">
+                Come work for the Devil Summoning detective! While prior
+                experience with the supernatural or occult isn't required, it
+                does help.
+              </p>
+            </section>
+
+            <section class="info-section">
+              <h2 class="section-header">Contact Info</h2>
+              <div class="contact-details">
+                <p>
+                  <strong>Recruitment Office:</strong>
+                  <a href="tel:3613711728" class="contact-link"
+                    >361-371-1728</a
+                  >
+                </p>
+                <p>
+                  <strong>Address:</strong> 4205 Cowhouse Creek Court, Corpus
+                  Christi, Texas
+                </p>
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:Kyouji@Kuzunoha.com" class="contact-link"
+                    >Kyouji@Kuzunoha.com</a
+                  >
+                </p>
+              </div>
+            </section>
+
+            <section class="info-section">
+              <h2 class="section-header">Open Positions</h2>
+              <ul class="positions-list">
+                <li>Backend Developer</li>
+                <li>Frontend Developer</li>
+                <li>Accountant</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Applicants Modal -->
+    <div id="applicantsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="closeApplicantsModal">&times;</span>
+        <h2 class="modal-title">Current Applicants</h2>
+        <div class="modal-body">
+          <div class="applicants-list">
+            <article class="applicant-card">
+              <div class="applicant-header">
+                <div class="applicant-info">
+                  <h3 class="applicant-name">John Smith</h3>
+                  <p class="applicant-meta">Computer Science • GPA: 3.8</p>
+                </div>
+                <div class="applicant-status status-under-review">Under Review</div>
+              </div>
+              <div class="applicant-details">
+                <p><strong>Applied for:</strong> Backend Developer</p>
+                <p><strong>Applied on:</strong> January 15, 2025</p>
+                <p><strong>Email:</strong> john.smith@ttu.edu</p>
+                <p><strong>Phone:</strong> +1 806-555-0123</p>
+              </div>
+              <div class="applicant-actions">
+                <button class="action-btn accept-btn">Accept</button>
+                <button class="action-btn reject-btn">Reject</button>
+              </div>
+            </article>
+
+            <article class="applicant-card">
+              <div class="applicant-header">
+                <div class="applicant-info">
+                  <h3 class="applicant-name">Sarah Johnson</h3>
+                  <p class="applicant-meta">Software Engineering • GPA: 3.9</p>
+                </div>
+                <div class="applicant-status status-interview">Interview</div>
+              </div>
+              <div class="applicant-details">
+                <p><strong>Applied for:</strong> Frontend Developer</p>
+                <p><strong>Applied on:</strong> January 12, 2025</p>
+                <p><strong>Email:</strong> sarah.johnson@ttu.edu</p>
+                <p><strong>Phone:</strong> +1 806-555-0456</p>
+              </div>
+              <div class="applicant-actions">
+                <button class="action-btn accept-btn">Accept</button>
+                <button class="action-btn reject-btn">Reject</button>
+              </div>
+            </article>
+
+            <article class="applicant-card">
+              <div class="applicant-header">
+                <div class="applicant-info">
+                  <h3 class="applicant-name">Michael Chen</h3>
+                  <p class="applicant-meta">Information Systems • GPA: 3.7</p>
+                </div>
+                <div class="applicant-status status-accepted">Accepted</div>
+              </div>
+              <div class="applicant-details">
+                <p><strong>Applied for:</strong> Accountant</p>
+                <p><strong>Applied on:</strong> January 8, 2025</p>
+                <p><strong>Email:</strong> michael.chen@ttu.edu</p>
+                <p><strong>Phone:</strong> +1 806-555-0789</p>
+              </div>
+              <div class="applicant-actions">
+                <button class="action-btn view-btn">View Profile</button>
+              </div>
+            </article>
+
+            <article class="applicant-card">
+              <div class="applicant-header">
+                <div class="applicant-info">
+                  <h3 class="applicant-name">Emily Davis</h3>
+                  <p class="applicant-meta">Computer Science • GPA: 4.0</p>
+                </div>
+                <div class="applicant-status status-under-review">Under Review</div>
+              </div>
+              <div class="applicant-details">
+                <p><strong>Applied for:</strong> Backend Developer</p>
+                <p><strong>Applied on:</strong> January 18, 2025</p>
+                <p><strong>Email:</strong> emily.davis@ttu.edu</p>
+                <p><strong>Phone:</strong> +1 806-555-0321</p>
+              </div>
+              <div class="applicant-actions">
+                <button class="action-btn accept-btn">Accept</button>
+                <button class="action-btn reject-btn">Reject</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        ©2025 Metador4. Built with passion.
+      </div>
+    </footer>
+
+    <script>
+      // Applicants Modal Functionality
+      const applicantsBtn = document.getElementById("applicantsBtn");
+      const applicantsModal = document.getElementById("applicantsModal");
+      const closeApplicantsModal = document.getElementById("closeApplicantsModal");
+
+      if (applicantsBtn && applicantsModal) {
+        applicantsBtn.addEventListener("click", () => {
+          applicantsModal.style.display = "flex";
+        });
+
+        closeApplicantsModal.addEventListener("click", () => {
+          applicantsModal.style.display = "none";
+        });
+
+        window.addEventListener("click", (event) => {
+          if (event.target === applicantsModal) {
+            applicantsModal.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

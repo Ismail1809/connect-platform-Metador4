@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="../assets/css/globals.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/pages-css/sign_in.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="home-page.html">
+            <img
+              src="../assets/img/home_page_img/ttu_logo.png"
+              alt="Texas Tech Athletics logo"
+              class="logo-placeholder"
+            />
+          </a>
+          <!-- <span class="brand-name">Sign In</span> -->
+        </div>
+        <div class="header-actions">
+          <div class="search">
+            <input aria-label="Search" placeholder="Search..." />
+            <img
+              class="search-icon"
+              src="../assets/img/home_page_img/maggl.png"
+              alt="Search"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="sign-in-main">
+      <div class="container">
+        <div class="sign-in-card">
+          <div class="auth-tabs">
+            <button
+              class="auth-tab active"
+              id="signInTab"
+              data-form="signIn"
+            >
+              Sign In
+            </button>
+            <button
+              class="auth-tab"
+              id="signUpTab"
+              data-form="signUp"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <!-- Sign In Form -->
+          <form class="auth-form active" id="signInForm">
+            <h1 class="auth-title">Welcome back</h1>
+            <p class="auth-subtitle">Sign in to your account</p>
+
+            <div class="form-group">
+              <label for="signInEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                id="signInEmail"
+                name="email"
+                class="form-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signInPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                id="signInPassword"
+                name="password"
+                class="form-input"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="submit-btn">Sign in</button>
+          </form>
+
+          <!-- Sign Up Form -->
+          <form class="auth-form" id="signUpForm">
+            <h1 class="auth-title">Create an account</h1>
+            <p class="auth-subtitle">Sign up to get started</p>
+
+            <div class="form-group">
+              <label for="signUpFullName" class="form-label">Full name</label>
+              <input
+                type="text"
+                id="signUpFullName"
+                name="fullName"
+                class="form-input"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signUpEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                id="signUpEmail"
+                name="email"
+                class="form-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signUpPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                id="signUpPassword"
+                name="password"
+                class="form-input"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="submit-btn">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>All rights reserved. Texas Tech</p>
+      </div>
+    </footer>
+
+    <script>
+      // Tab switching functionality
+      const signInTab = document.getElementById("signInTab");
+      const signUpTab = document.getElementById("signUpTab");
+      const signInForm = document.getElementById("signInForm");
+      const signUpForm = document.getElementById("signUpForm");
+
+      signInTab.addEventListener("click", () => {
+        signInTab.classList.add("active");
+        signUpTab.classList.remove("active");
+        signInForm.classList.add("active");
+        signUpForm.classList.remove("active");
+      });
+
+      signUpTab.addEventListener("click", () => {
+        signUpTab.classList.add("active");
+        signInTab.classList.remove("active");
+        signUpForm.classList.add("active");
+        signInForm.classList.remove("active");
+      });
+
+      // Form submission - redirect to dashboard
+      signInForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        window.location.href = "company-dashboard.html";
+      });
+
+      signUpForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        window.location.href = "company-dashboard.html";
+      });
+    </script>
+  </body>
+</html>
