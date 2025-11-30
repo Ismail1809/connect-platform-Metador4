@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 :root {
   --bg: #0f0f0f;
   --card: #1a1a1a;
@@ -17,12 +19,38 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(185, 28, 28, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(185, 28, 28, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* Header Styles - Matching student-profile.html */
 .site-header {
-  background: var(--accent);
+  background: linear-gradient(135deg, #b91c1c 0%, #991919 100%);
   color: #fff;
-  padding: 25px 0; /* reduced vertical padding for a sleeker header */
+  padding: 25px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(185, 28, 28, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .container {
@@ -52,6 +80,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.logo-placeholder:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
 }
 
 .brand-name {
@@ -72,22 +107,35 @@
 }
 
 .header-actions .search input {
-  background: #262626;
-  border: 0;
+  background: rgba(38, 38, 38, 0.9);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   padding: 10px 14px 10px 40px;
   border-radius: 24px;
   color: var(--muted);
   min-width: 220px;
   font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .header-actions .search input::placeholder {
   color: var(--muted);
 }
 
+.header-actions .search input:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(38, 38, 38, 0.95);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
 .header-actions .search input:focus {
-  outline: 2px solid rgba(255, 255, 255, 0.2);
-  outline-offset: 2px;
+  outline: none;
+  border-color: rgba(185, 28, 28, 0.5);
+  box-shadow: 0 6px 25px rgba(185, 28, 28, 0.3);
+  background: rgba(45, 45, 45, 0.95);
 }
 
 .search-icon {
@@ -108,17 +156,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s, border-color 0.2s;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn img {
   width: 20px;
   height: 20px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.btn:hover img {
+  transform: scale(1.15) translateY(-2px);
+  opacity: 1;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(255, 255, 255, 0.5));
 }
 
 .btn.ghost {
@@ -143,19 +203,38 @@
 }
 
 .stat-card {
-  background: var(--card-dark);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.02)
+    ),
+    var(--card-dark);
+  backdrop-filter: blur(20px);
   border-radius: var(--radius);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .stat-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(185, 28, 28, 0.2);
 }
 
 .stat-header {
@@ -237,21 +316,30 @@
 }
 
 .job-card {
-  background: var(--card-dark);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.02)
+    ),
+    var(--card-dark);
+  backdrop-filter: blur(20px);
   border-radius: var(--radius);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .job-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(185, 28, 28, 0.3);
+  border-color: rgba(185, 28, 28, 0.4);
 }
 
 .job-card-image {
@@ -321,28 +409,47 @@
 }
 
 .view-company-button {
-  background: var(--accent);
-  border: none;
+  background: linear-gradient(135deg, #b91c1c 0%, #d32f2f 100%);
+  border: 2px solid transparent;
   border-radius: 8px;
   padding: 10px 16px;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   color: var(--text);
   font-size: 12px;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 8px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(185, 28, 28, 0.3);
+}
+
+.view-company-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.view-company-button:hover::before {
+  left: 100%;
 }
 
 .view-company-button:hover {
-  background: #dc2626;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(185, 28, 28, 0.4);
+  background: linear-gradient(135deg, #d32f2f 0%, #b91c1c 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(185, 28, 28, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .view-company-button:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
 }
 
 /* Modal Styles - Right Side Panel (LinkedIn style) */
